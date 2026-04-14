@@ -3,168 +3,277 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>maxjegagix | Profile Showcase</title>
-    <meta name="description" content="Profile showcase responsif dengan tone warna dari avatar GitHub." />
+    <title>CV Elektronik | Rizal Kurniawan</title>
+    <meta
+      name="description"
+      content="CV elektronik Rizal Kurniawan dalam format slide yang responsif dan mobile friendly."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="container nav">
-        <div class="brand">maxjegagix</div>
-        <nav class="nav-links">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="nav-cta">
-          <button class="hamburger" aria-label="Buka menu">☰</button>
-          <a class="btn btn-secondary" href="#projects">Lihat Karya</a>
-          <a class="btn btn-primary" href="#contact">Kolaborasi</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-row">
+          <a class="brand" href="#slide-1">Curriculum Vitae</a>
+          <button class="menu-toggle" type="button" aria-label="Buka navigasi">
+            ☰
+          </button>
+          <nav class="site-nav" aria-label="Navigasi slide">
+            <a href="#slide-1">Profil</a>
+            <a href="#slide-2">Data & Riwayat</a>
+            <a href="#slide-3">Keterampilan</a>
+            <a href="#slide-4">Portofolio</a>
+            <a class="btn btn-primary btn-download" href="assets/document/CV.pdf" download>
+              Download CV
+            </a>
+          </nav>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <main>
-      <section class="hero" id="about">
-        <div class="container hero-grid">
-          <div>
-            <span class="badge">Profile Showcase • Update Maret 2026</span>
-            <h1>Designer + Frontend Developer yang fokus pada detail, ritme, dan hasil.</h1>
-            <p>
-              Saya membantu brand membangun pengalaman digital yang bersih, cepat, dan terasa
-              personal. Fokus pada UI yang rapi, story yang jelas, dan eksekusi responsif.
-            </p>
-            <div style="display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap">
-              <a class="btn btn-primary" href="#projects">Lihat Portofolio</a>
-              <a class="btn btn-secondary" href="#contact">Hubungi Saya</a>
-            </div>
-            <div class="hero-metrics">
-              <div class="metric"><strong>32+</strong>project selesai</div>
-              <div class="metric"><strong>8</strong>tahun pengalaman</div>
-              <div class="metric"><strong>12</strong>klien aktif</div>
-            </div>
-          </div>
-          <div class="hero-card hero-interactive" aria-label="Area interaktif">
-            <div class="hero-glow" aria-hidden="true"></div>
-            <div class="avatar-wrap">
-              <img class="avatar" src="assets/img/github_avatar.png" alt="Foto profil" />
-            </div>
-            <h3>Signature Style</h3>
-            <p style="color: var(--muted)">
-              Kontras hangat, layout bersih, dan detail microcopy yang membuat pengguna paham
-              tanpa harus membaca panjang.
-            </p>
-            <div class="pill-list" style="margin-top: 16px">
-              <span class="pill">Design System</span>
-              <span class="pill">UI Strategy</span>
-              <span class="pill">Frontend Build</span>
-              <span class="pill">Rapid Prototyping</span>
-            </div>
-            <div class="hero-interaction-note">Geser kursor untuk memicu animasi.</div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="skills">
-        <div class="container">
-          <h2>Skill utama yang sering dipakai</h2>
-          <p class="lead">
-            Saya menggabungkan desain dan development agar landing page terasa konsisten dari
-            wireframe sampai deployment.
-          </p>
-          <div class="grid-3">
-            <div class="card">
-              <span class="badge">01</span>
-              <h3>UI/UX Direction</h3>
-              <p>Audit struktur konten, flow CTA, dan hierarki visual.</p>
-            </div>
-            <div class="card">
-              <span class="badge">02</span>
-              <h3>Frontend Delivery</h3>
-              <p>HTML/CSS/JS yang clean, scalable, dan cepat.</p>
-            </div>
-            <div class="card">
-              <span class="badge">03</span>
-              <h3>Brand Storytelling</h3>
-              <p>Copy yang ringkas tapi tetap memiliki karakter.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section projects" id="projects">
-        <div class="container">
-          <h2>Project highlight</h2>
-          <p class="lead">
-            Beberapa showcase terbaru yang fokus pada konversi, performance, dan visual clarity.
-          </p>
-          <div class="grid-3">
-            <div class="card project-card">
-              <div class="project-thumb">NeuraPay</div>
-              <h3>Fintech onboarding refresh</h3>
-              <p>Redesign onboarding untuk meningkatkan trust dan completion rate.</p>
-              <div class="tags">
-                <span class="tag">UX Audit</span>
-                <span class="tag">Design System</span>
-                <span class="tag">Prototype</span>
+      <main>
+        <section class="slides-wrap" aria-label="CV elektronik dalam format slide">
+          <div class="slides" id="slides">
+            <article class="slide slide-hero is-active" id="slide-1" data-title="Profil">
+              <div class="container slide-grid hero-grid">
+                <div class="hero-copy">
+                  <span class="eyebrow">CV Elektronik • Rizal Kurniawan</span>
+                  <h1>Rizal Kurniawan</h1>
+                  <p class="role">Teller & Staf IT</p>
+                  <p class="summary">
+                    Programmer komputer dengan pengalaman sekitar 7 tahun dalam pengembangan,
+                    instalasi, maintenance, dan dukungan teknis. Terbiasa bekerja kolaboratif
+                    maupun mandiri, menjaga kualitas kode, serta menyelesaikan pekerjaan dengan
+                    rapi dalam tenggat waktu yang ketat.
+                  </p>
+                  <div class="hero-actions">
+                    <a class="btn btn-primary" href="#slide-4">Lihat Portofolio</a>
+                    <a class="btn btn-secondary" href="assets/document/CV.pdf" download>
+                      Download CV PDF
+                    </a>
+                  </div>
+                  <div class="highlight-grid">
+                    <div class="highlight-card">
+                      <strong>7 Tahun</strong>
+                      <span>Pengalaman kerja & dukungan IT</span>
+                    </div>
+                    <div class="highlight-card">
+                      <strong>S1</strong>
+                      <span>Teknik Informatika</span>
+                    </div>
+                    <div class="highlight-card">
+                      <strong>Kediri</strong>
+                      <span>Jawa Timur</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-panel">
+                  <div class="profile-photo-frame">
+                    <img src="assets/img/profile.jpg" alt="Foto profil Rizal Kurniawan" />
+                  </div>
+                  <div class="profile-note">
+                    <h2>Deskripsi Diri</h2>
+                    <p>
+                      Memiliki minat kuat pada pengembangan aplikasi, analisis data, jaringan,
+                      instalasi software, dan perawatan perangkat komputer. Terbiasa membantu
+                      kebutuhan operasional tim, menyusun solusi teknis, serta menjaga layanan
+                      tetap berjalan dengan baik.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="card project-card">
-              <div class="project-thumb">Sora Studio</div>
-              <h3>Agency portfolio rebuild</h3>
-              <p>Layout baru dengan fokus pada case studies dan CTA booking.</p>
-              <div class="tags">
-                <span class="tag">Webflow</span>
-                <span class="tag">Motion</span>
-                <span class="tag">Copy</span>
-              </div>
-            </div>
-            <div class="card project-card">
-              <div class="project-thumb">Nova SaaS</div>
-              <h3>Product launch site</h3>
-              <p>Landing page dengan detail fitur dan pricing yang tajam.</p>
-              <div class="tags">
-                <span class="tag">Frontend</span>
-                <span class="tag">SEO</span>
-                <span class="tag">Analytics</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </article>
 
-      <section class="section" id="contact">
-        <div class="container cta">
-          <div>
-            <h2>Mau kolaborasi atau butuh landing page baru?</h2>
-            <p>
-              Kirim brief dan timeline. Saya siap bantu dari discovery sampai page live,
-              termasuk optimasi performa dan struktur konten.
-            </p>
-          </div>
-          <div>
-            <a class="btn btn-primary" href="#">Jadwalkan Call</a>
-            <p style="margin-top: 12px; color: #f3cfd9">Balasan biasanya dalam 24 jam kerja.</p>
-          </div>
-        </div>
-      </section>
-    </main>
+            <article class="slide" id="slide-2" data-title="Data & Riwayat">
+              <div class="container slide-grid detail-grid">
+                <div class="column-card">
+                  <div class="section-heading">
+                    <span class="eyebrow">Slide 2</span>
+                    <h2>Data Diri Singkat</h2>
+                  </div>
+                  <div class="identity-list">
+                    <div class="identity-item">
+                      <span>Nama</span>
+                      <strong>Rizal Kurniawan</strong>
+                    </div>
+                    <div class="identity-item">
+                      <span>Domisili</span>
+                      <strong>Kediri, Jawa Timur, 64173</strong>
+                    </div>
+                    <div class="identity-item">
+                      <span>Email</span>
+                      <strong>rkm.kurniawan@gmail.com</strong>
+                    </div>
+                    <div class="identity-item">
+                      <span>Posisi Saat Ini</span>
+                      <strong>Teller & Staf IT</strong>
+                    </div>
+                  </div>
 
-    <footer>
-      <div class="container">
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px">
-          <span>© 2026 maxjegagix</span>
-          <span>Behance • Dribbble • GitHub: maxjegagix</span>
-        </div>
-      </div>
-    </footer>
+                  <div class="section-heading compact">
+                    <h3>Riwayat Pendidikan</h3>
+                  </div>
+                  <div class="timeline">
+                    <article class="timeline-item">
+                      <span class="timeline-year">2011 - 2013</span>
+                      <h4>SMKN 1 Kediri</h4>
+                      <p>Teknik Komputer dan Jaringan</p>
+                    </article>
+                    <article class="timeline-item">
+                      <span class="timeline-year">2015 - 2021</span>
+                      <h4>STT Cahaya Surya</h4>
+                      <p>Strata 1 Teknik Informatika</p>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="column-card">
+                  <div class="section-heading">
+                    <span class="eyebrow">Pengalaman Kerja</span>
+                    <h2>Riwayat Pekerjaan</h2>
+                  </div>
+                  <div class="timeline dense">
+                    <article class="timeline-item">
+                      <span class="timeline-year">2017 - Sekarang</span>
+                      <h4>PT. BPRS Rahma Syariah</h4>
+                      <p class="timeline-role">Teller & Staf IT</p>
+                      <p>
+                        Menangani transaksi pelanggan, mendukung kebutuhan operasional cabang,
+                        memperbaiki hardware dan software, membantu desain materi promosi, dan
+                        mendiagnosa permasalahan jaringan kantor.
+                      </p>
+                    </article>
+                    <article class="timeline-item">
+                      <span class="timeline-year">Sebelumnya</span>
+                      <h4>I-Tech, Kediri</h4>
+                      <p class="timeline-role">Teknisi Komputer</p>
+                      <p>
+                        Melakukan perbaikan komputer dan laptop, upgrade perangkat, troubleshooting
+                        printer, serta identifikasi masalah hardware dan software.
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="slide" id="slide-3" data-title="Keterampilan">
+              <div class="container slide-grid skills-grid">
+                <div class="skills-intro">
+                  <span class="eyebrow">Slide 3</span>
+                  <h2>Keterampilan</h2>
+                  <p>
+                    Kombinasi kemampuan teknis, pemeliharaan perangkat, jaringan, dan software
+                    yang mendukung pekerjaan harian maupun pengembangan sistem.
+                  </p>
+                </div>
+                <div class="skills-columns">
+                  <section class="skill-card">
+                    <h3>Teknis & Infrastruktur</h3>
+                    <ul class="skill-list">
+                      <li>Software deployment management</li>
+                      <li>Operating system testing</li>
+                      <li>Hardware & software installation</li>
+                      <li>Desktop dan laptop installation</li>
+                      <li>Network component installation</li>
+                      <li>Wireless networking</li>
+                      <li>Email account setup</li>
+                      <li>Maintenance & repair</li>
+                    </ul>
+                  </section>
+                  <section class="skill-card">
+                    <h3>Programming & Tools</h3>
+                    <ul class="skill-list">
+                      <li>PHP</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>MySQL</li>
+                      <li>CodeIgniter 3</li>
+                      <li>Bootstrap</li>
+                      <li>Laravel 8</li>
+                      <li>Microsoft Office</li>
+                    </ul>
+                  </section>
+                  <section class="skill-card">
+                    <h3>Software & Soft Skills</h3>
+                    <ul class="skill-list">
+                      <li>CorelDraw</li>
+                      <li>Photoshop</li>
+                      <li>Project management</li>
+                      <li>Computer skills</li>
+                      <li>Analisis data & penulisan laporan</li>
+                      <li>Problem solving</li>
+                      <li>Kolaborasi tim</li>
+                      <li>Bahasa Inggris</li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </article>
+
+            <article class="slide" id="slide-4" data-title="Portofolio">
+              <div class="container portfolio-layout">
+                <div class="section-heading">
+                  <span class="eyebrow">Slide 4</span>
+                  <h2>Portofolio / Project</h2>
+                  <p>
+                    Disusun dari pengalaman kerja, aktivitas teknis, dan jenis project yang pernah
+                    ditangani sesuai isi CV.
+                  </p>
+                </div>
+                <div class="portfolio-grid">
+                  <article class="project-card">
+                    <div class="project-image-slot">Space Gambar Project</div>
+                    <h3>Dukungan Sistem Operasional Bank</h3>
+                    <p>
+                      Mendukung operasional harian sebagai teller sekaligus staf IT, termasuk
+                      perangkat kerja, software pendukung, dan kelancaran sistem di lingkungan
+                      kantor.
+                    </p>
+                  </article>
+                  <article class="project-card">
+                    <div class="project-image-slot">Space Gambar Project</div>
+                    <h3>Instalasi & Maintenance Komputer</h3>
+                    <p>
+                      Instalasi sistem operasi, aplikasi kerja, upgrade hardware, serta perbaikan
+                      komputer dan laptop untuk kebutuhan kerja dan layanan teknis.
+                    </p>
+                  </article>
+                  <article class="project-card">
+                    <div class="project-image-slot">Space Gambar Project</div>
+                    <h3>Troubleshooting Jaringan Kantor</h3>
+                    <p>
+                      Diagnosa dan penanganan masalah koneksi jaringan kantor, termasuk perangkat
+                      jaringan dan kebutuhan konektivitas antar pengguna.
+                    </p>
+                  </article>
+                  <article class="project-card">
+                    <div class="project-image-slot">Space Gambar Project</div>
+                    <h3>Desain Materi Promosi</h3>
+                    <p>
+                      Pembuatan desain seragam kantor, banner, brosur, dan pamflet menggunakan
+                      software desain untuk mendukung kebutuhan branding internal.
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <aside class="slide-dots" aria-label="Indikator slide">
+        <a class="dot is-active" href="#slide-1" aria-label="Ke slide 1"></a>
+        <a class="dot" href="#slide-2" aria-label="Ke slide 2"></a>
+        <a class="dot" href="#slide-3" aria-label="Ke slide 3"></a>
+        <a class="dot" href="#slide-4" aria-label="Ke slide 4"></a>
+      </aside>
+    </div>
 
     <script src="assets/js/main.js"></script>
   </body>
